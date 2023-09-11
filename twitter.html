@@ -4,8 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter clone</title>
+
+    <style>
+      .img {
+        height: 20px;
+        width: 20px;
+        margin-right: 11px;
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgb(71, 196, 228);
+        width: 180px;
+        top: 0px;
+        bottom: 20px;
+        right: 20px;
+        left: 0;
+        position: fixed;
+      }
+
+      .sidebar-image-container {
+        margin-bottom: 80px;
+        display: flex;
+        align-items: start;
+      }
+    </style>
   </head>
   <body style="height: 3000px">
+    <div class="sidebar">
+      <div
+        class="sidebar-image-container"
+        style="display: flex; flex-direction: row"
+      >
+        <img class="img" src="/twitter-icons/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div
+        class="sidebar-image-container"
+        style="display: flex; flex-direction: row"
+      >
+        <img
+          class="img"
+          src="/twitter-icons/icons8-notification-25.png"
+          alt=""
+        />
+        <div>Notifications</div>
+      </div>
+      <div
+        class="sidebar-image-container"
+        style="display: flex; flex-direction: row"
+      >
+        <img class="img" src="/twitter-icons/envelope.svg" alt="" />
+        <div>Messages</div>
+      </div>
+      <div
+        class="sidebar-image-container"
+        style="display: flex; flex-direction: row"
+      >
+        <img class="img" src="/twitter-icons/icons8-list-96.png" alt="" />
+        <div>Lists</div>
+      </div>
+      <div
+        class="sidebar-image-container"
+        style="display: flex; flex-direction: row"
+      >
+        <img class="img" src="/twitter-icons/bookmark.svg" alt="" />
+        <div>Bookmarks</div>
+      </div>
+      <div
+        class="sidebar-image-container"
+        style="display: flex; flex-direction: row"
+      >
+        <img class="img" src="/twitter-icons/group.jpg" alt="" />
+        <div>Community</div>
+      </div>
+      <div
+        class="sidebar-image-container"
+        style="display: flex; flex-direction: row"
+      >
+        <img class="img" src="/twitter-icons/twitterLogo.svg" alt="" />
+        <div>Profile</div>
+      </div>
+
+      <button>Tweetle</button>
+    </div>
+
     <div>
       <!-- CARD 1:  first card contains smile face and  tweet Button -->
       <div
@@ -44,12 +131,12 @@
         >
           <img
             style="width: 20px; height: 20px; margin-bottom: 18px"
-            src="/twitter-icons/bookmark.svg"
+            src="/twitter-icons/icons8-image-file-add-64.png"
             alt=""
           />
           <img
             style="width: 20px; height: 20px; margin-bottom: 18px"
-            src="/twitter-icons/bookmark.svg"
+            src="/twitter-icons/icons8-gif-48.png"
             alt=""
           />
           <img
@@ -58,8 +145,13 @@
             alt=""
           />
           <img
-            style="width: 35px; height: 30px; margin-bottom: 18px"
-            src="/twitter-icons/calendar-1.1s-200px.svg"
+            style="width: 20px; height: 20px; margin-bottom: 18px"
+            src="/twitter-icons/icons8-list-96.png"
+            alt=""
+          />
+          <img
+            style="width: 20px; height: 20px; margin-bottom: 18px"
+            src="/twitter-icons/icons8-schedule-64.png"
             alt=""
           />
           <button
@@ -158,7 +250,7 @@
           />
         </div>
 
-        <!-- div for tweet, like, retweet,uploads -->
+        <!-- div 1 for tweet, like, retweet,uploads -->
 
         <div
           style="
@@ -172,14 +264,10 @@
             padding-right: 8px;
             padding-left: 10px;
             padding-bottom: 0px;
-            border-width: 4px;
-            border-color: black;
-            border-style: double;
           "
         >
-
-<!-- TODO -->
-<!-- put every icon in a div set it to relative  and  the like,comment, and  retweet icon to be on the right side of the tweet(absolute) -->
+          <!-- TODO -->
+          <!-- put every icon in a div set it to relative  and  the like,comment, and  retweet icon to be on the right side of the tweet(absolute) -->
           <img
             style="width: 20px; height: 20px"
             src="/twitter-icons/icons8-comment-96.png"
@@ -209,9 +297,7 @@
         </div>
       </div>
 
-
-
-<!-- CARD 2 contains tweets, like, and retweet, comment and upload -->
+      <!-- CARD 2 contains tweets, like, and retweet, comment and upload -->
 
       <div
         style="
@@ -252,7 +338,7 @@
             "
           >
             Onur Agygun BaranSel My Github
-            <a href=""> This clone has  slight difference </a>
+            <a href=""> This clone has slight difference </a>
           </p>
           <p>@BaranselAygun. 9s</p>
         </div>
@@ -284,7 +370,7 @@
           />
         </div>
 
-        <!-- div for tweet, like, retweet,uploads -->
+        <!-- div 2 for tweet, like, retweet,uploads -->
 
         <div
           style="
@@ -298,14 +384,10 @@
             padding-right: 8px;
             padding-left: 10px;
             padding-bottom: 0px;
-            border-width: 4px;
-            border-color: black;
-            border-style: double;
           "
         >
-
-<!-- TODO -->
-<!-- put every icon in a div set it to relative  and  the like,comment, and  retweet icon to be on the right side of the tweet(absolute) -->
+          <!-- TODO -->
+          <!-- put every icon in a div set it to relative  and  the like,comment, and  retweet icon to be on the right side of the tweet(absolute) -->
           <img
             style="width: 20px; height: 20px"
             src="/twitter-icons/icons8-comment-96.png"
@@ -334,17 +416,6 @@
           />
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
     </div>
   </body>
 </html>
